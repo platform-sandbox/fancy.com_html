@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title></title>
-	<meta name="viewport" content="width=device-width">
+<meta charset="UTF-8">
+<title></title>
+<meta name="viewport" content="width=device-width">
+<style>
+	.fancy_com {
+		font-size: small; 
+		font-family: Arial, '맑은 고딕'; 
+		line-height: 1.6; 
+	}
+</style>
 </head>
 <body>
-	
+	<div class="fancy_com index_html">
+		
+		<h1>wish.com</h1>
+		
+		<form action="" method="">
+			<label for="search">검색할 키워드 입력 </label>
+			<input type="text" name="search" id="search">
+			<input type="submit" value="검색">
+		</form>
+
+		<style>
+			.menu {}
+			.menu a { 
+				display: block; 
+				padding: .5em 0;
+				border-bottom: 1px solid orange; 
+				text-decoration: none; 
+			}
+			.menu .download_app, 
+			.menu .shopping_cart, 
+			.menu .help { border-bottom-width: 3px; }
+		</style>
+		<div class="menu">
+			<ul>
+				<li><a href="">Login</a></li>
+				<li><a href="" class="download_app">Download App</a></li>
+				<li><a href="">Home</a></li>
+				<li><a href="" class="shopping_cart">Shopping Cart</a></li>
+				<li><a href="">Order History</a></li>
+				<li><a href="" class="help">Help</a></li>
+				<li><a href="">Terms of Service</a></li>
+				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">Rerturn Policy</a></li>
+			</ul>
+		</div>
+
+		<h2>상품진열</h2>
+		<style>
+			.products {}
+			.item { 
+				margin: 1em .5em; 
+				padding: .5em 1em; 
+				border: 1px solid #eee; 
+			}
+			.item p { margin: 0; }
+			.item .box1 { 
+				position: relative; 
+				width: 250px; 
+				height: 250px; 
+				overflow: hidden; 
+			}
+			.urgency-inventory {
+				position: absolute;
+				bottom: 0; 
+				right: 0; 
+				padding: .2em .5em; 
+				background-color: orange;
+				color: #fff; 
+				font-weight: bold; 
+			}
+			.feed-image-container img { width: 250px; }
+			.currency-subscript { font-weight: normal; font-size: .8em; }
+		</style>
+		<div class="contents products host">
+			<div class="root inner">
+				<div class="item">
+					<div class="box1">
+						<p class="feed-image-container"><img src="https://contestimg.wish.com/api/image/fetch?contest_id=5260ebf53deaf7614fe80c6b&amp;w=616&amp;h=822" alt=""></p>
+						<p class="urgency-inventory"> Only 23 left! </p>	
+					</div>
+					<p class="product-prices">
+						<s class="crossed-price">₩31,610</s>
+						<strong class="actual-price"> ₩17,913 <span class="currency-subscript">KRW</span></strong>
+					</p>
+					<p>
+						<a href="">Details</a>
+						<a href="">Buy</a>
+					</p>
+				</div>
+				<div class="item">
+					<div class="box1">
+						<p class="feed-image-container"><img src="https://contestimg.wish.com/api/image/fetch?contest_id=52806baec85bdf0d7627ee6e&amp;w=616&amp;h=712" alt=""></p>
+						<!-- <p class="urgency-inventory"> Only 23 left! </p> -->
+					</div>
+					<p class="product-prices">
+						<!-- <s class="crossed-price">₩31,610</s> -->
+						<strong class="actual-price"> ₩22,127 <span class="currency-subscript">KRW</span></strong>
+					</p>
+					<p>
+						<a href="">Details</a>
+						<a href="">Buy</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
 </body>
 </html>
