@@ -49,13 +49,19 @@
 			</ul>
 		</div>
 
+
+
+
 		<h2>상품진열</h2>
 		<style>
 			.products {}
+			.products .inner:after { content: ""; display: block; clear: both; }
 			.item { 
-				margin: 1em .5em; 
-				padding: .5em 1em; 
+				float: left; 
+				/*margin: 1em .5em; */
+				/*padding: .5em 1em; */
 				border: 1px solid #eee; 
+				background-color: #eef2f5;
 			}
 			.item p { margin: 0; }
 			.item .box1 { 
@@ -75,9 +81,12 @@
 			}
 			.feed-image-container img { width: 250px; }
 			.currency-subscript { font-weight: normal; font-size: .8em; }
+			.crossed-price { font-size: 11px; color: #949aa3; }
+			.actual-price { font-size: 15px; color: #4e5867; }
 		</style>
 		<div class="contents products host">
 			<div class="root inner">
+
 				<div class="item">
 					<div class="box1">
 						<p class="feed-image-container"><img src="https://contestimg.wish.com/api/image/fetch?contest_id=5260ebf53deaf7614fe80c6b&amp;w=616&amp;h=822" alt=""></p>
@@ -92,6 +101,8 @@
 						<a href="">Buy</a>
 					</p>
 				</div>
+				<!-- item -->
+
 				<div class="item">
 					<div class="box1">
 						<p class="feed-image-container"><img src="https://contestimg.wish.com/api/image/fetch?contest_id=52806baec85bdf0d7627ee6e&amp;w=616&amp;h=712" alt=""></p>
@@ -107,7 +118,12 @@
 					</p>
 				</div>
 			</div>
+			<!-- root -->
+			<!-- inner -->
 		</div>
+		<!-- contents -->
+		<!-- products -->
+		<!-- host -->
 
 	</div>
 </body>
